@@ -75,7 +75,7 @@ def index_page(username: Optional[str] = Cookie(default=None)):
 
 
 #сохранена cookie или аутоидентификация пройдена - приветствуем, нет - "я вас незнаю!"
-@app.post("/login")     
+@app.post("login")     
 def process_login_page(username : str = Form(...), password : str = Form(...)):
     user = users.get(username)
     if not user or not verify_password(username, password):
