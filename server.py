@@ -55,7 +55,7 @@ users = {
 # проверяем cookie: есть - приветствуем, нет - ощищаем и на главную страницу
 @app.get("/")  
 def index_page(username: Optional[str] = Cookie(default=None)):
-    with open('/login.html', 'r') as f:
+    with open('login.html', 'r') as f:
         login_page = f.read()
     if not username:
         return Response(login_page, media_type="text/html")
