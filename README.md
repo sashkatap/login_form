@@ -1,4 +1,4 @@
-# Simple login form create with python + FastAPI
+# Simple login form create with Python + FastAPI
 
 server.py The simplest testing authentication server, written in FastAPI.
 
